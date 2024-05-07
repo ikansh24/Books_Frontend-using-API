@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+#React app for Displaying Books and Details of Particular Book by clicking on link
+Project Overview
+This project is a front-end web application developed using React.js, one of the most popular JavaScript libraries for building user interfaces. It's designed to interact with a remote API to fetch and display a list of books. Each book can be clicked to view more detailed information. This setup demonstrates key front-end development concepts, including API integration, routing, state management, and responsive UI design.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Key Features
+Dynamic Data Loading: The application dynamically loads book data from a remote API, ensuring that the content is always up-to-date. This is achieved using the Axios library to handle HTTP requests.
+Routing: Implemented with React Router v6, the app includes several routes:
+/books - Displays a list of all books. Each book title is a link that leads to a detailed view of the book.
+/books/:id - Displays detailed information about a specific book, such as title, ISBN, page count, and authors.
+Interactive and User-friendly UI:
+Loading States: The application shows a loading indicator while fetching data from the API, enhancing the user experience by providing feedback that the application is processing.
+Error Handling: The application gracefully handles and displays errors encountered during API calls, such as network issues or data fetching problems.
+Navigational Links: Users can navigate through the application using links without full page reloads, making the interface faster and smoother.
+Responsive Design: The UI is designed to be responsive, making it accessible and usable on various devices, including desktops, tablets, and smartphones.
+Styling: CSS is used to enhance the visual appearance of the application, featuring a clean and modern aesthetic with a focus on readability and usability. Specific styling includes headers, a well-defined book list, and attractively displayed book details.
+Technologies Used
+React.js: Used for building the user interface, including components and hooks for managing state and effects.
+React Router v6: Handles the routing within the application, allowing navigation between different views without reloading the page.
+Axios: Facilitates HTTP requests to fetch data from the backend API.
+CSS: Provides styling for the application, enhancing the visual layout and design.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#Run app by giving command 'npm start' in terminal
